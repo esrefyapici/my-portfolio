@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import NavbarLinks from "./NavbarLinks";
+import Logo from "../assets/Logo.png"
 
 function Navbar() {
   const [links, setLinks] = useState(false);
@@ -10,7 +11,7 @@ function Navbar() {
       <div className="h-20 bg-bg-third flex justify-between items-center px-5">
         <h1 className="font-bold text-2xl">
           <a href="/" className="hover:text-amber-100">
-            ESREF.com
+            <img src={Logo} alt="logo" className="size-20"/>
           </a>
         </h1>
 
